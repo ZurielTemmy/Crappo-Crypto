@@ -3,16 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 }
-nav {
+.navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-left: 15%;
-    padding-right: 10%;
-    padding-top: 40px;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 20px;
 }
-span {
+.links ul {
+    display: flex;
+}
+.links ul li {
+    list-style: none;
+    margin-right: 35px;
+}
+.links ul li a {
+    text-decoration: none;
+    color: white;
+}
+.stroke {
     height: 20px;
     width: 2px;
-    background: grey;
+    color: red;
 }
