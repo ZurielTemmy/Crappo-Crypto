@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: monospace
 }
 .navbar {
     display: flex;
@@ -10,20 +11,119 @@
     background: black;
     color: white;
     padding: 20px;
+    background: rgb(13, 13, 117);
+    padding: 15px 100px 15px 100px;
 }
 .links ul {
     display: flex;
 }
 .links ul li {
     list-style: none;
-    margin-right: 35px;
+    margin: 10px;
+    font-size: 15px;
 }
 .links ul li a {
     text-decoration: none;
     color: white;
+    
 }
 .stroke {
     height: 20px;
     width: 2px;
-    color: red;
+    background: grey;
+    
 }
+button {
+   color: white;
+   border: none;
+   font-size: 15px;
+}
+.links .register {
+    padding: 8px;
+    background: rgb(130, 130, 249);
+    border-radius: 20px;
+}
+.links .login {
+    background: none;
+}
+.toggle-btn {
+    position: absolute;
+    top: 25px;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    width: 27px;
+    height: 19px;
+    justify-content: space-between;
+}
+.toggle-btn .bar{
+    height: 2px;
+    width: 100%;
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* queries */
+@media (max-width: 962px) {
+    .toggle-btn {
+        display: flex;
+    }
+    .links ul {
+         display: none;
+    }
+    /* .navbar  {
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+    .navbar .links ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        background: rgb(13, 13, 117);
+        transition: 2s;
+    }
+    .navbar .links ul.active {
+        display: flex;
+    }
+
+
+
+
+}
+            /* queries */
