@@ -2,9 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: monospace
+    font-family: monospace;
+    list-style: none;
 }
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,6 +38,8 @@ button {
    color: white;
    border: none;
    font-size: 15px;
+   padding: 0 10px 0 10px;
+   cursor: pointer;
 }
 .links .register {
     padding: 8px;
@@ -61,7 +64,7 @@ button {
     width: 100%;
     background: white;
 }
-
+ */
 
 
 
@@ -102,7 +105,7 @@ button {
 
 
             /* queries */
-@media (max-width: 962px) {
+/* @media (max-width: 962px) {
     .toggle-btn {
         display: flex;
     }
@@ -113,7 +116,7 @@ button {
         flex-direction: column;
         align-items: flex-start;
     } */
-    .navbar .links ul {
+    /* .navbar .links ul {
         flex-direction: column;
         position: absolute;
         top: 80px;
@@ -122,10 +125,44 @@ button {
     }
     .navbar .links ul.active {
         display: flex;
-    }
+    } */
 
 
 
 
+
+            
+
+
+            /* here */
+
+header {
+    width: 100%;
+    background: rgb(13, 13, 117);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 80px;
 }
-            /* queries */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hamburger {
+    display: none;
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    float: inline-end;
+}
+.navbar ul li a {
+    display: block;
+    color: white;
+    transition: 0.2s;
+    padding: 10px 25px;
+    text-decoration: none;
+    margin: 0 5px;
+}
