@@ -5,13 +5,13 @@
     font-family: monospace;
     list-style: none;
 }
-header {
+.navbar {
     width: 100%;
     background: rgb(13, 13, 117);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 100px;
+    padding: 0 150px;
     height: 80px;
 }
 .navbar {
@@ -25,7 +25,6 @@ header {
 .navbar ul {
     display: flex;
     justify-content: space-between;
-    margin-left: 500px;
 }
 .navbar ul li a {
     display: block;
@@ -39,6 +38,7 @@ button {
     border: none;
     background: none;
     color: #fff;
+    cursor: pointer;
 }
 .links .register {
     background: rgb(129, 129, 214);
@@ -49,5 +49,58 @@ button {
     height: 15px;
     width: 2px;
     background: grey;
-    margin: 10px 18px;
+    margin: 10px 20px;
+}
+
+
+
+            /* media */
+
+@media only screen and (max-width: 923px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 2px;
+        background: white;
+        margin: 6px 0;
+    }
+    .links {
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: rgb(13, 13, 117);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .links.active {
+        height: 350px;
+    }
+    .links.active ul {
+        opacity: 1;
+    }
+    .btn {
+        display: flex;
+        /* text-align: center; */
+    }
+    .links ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    button {
+        display: flex;
+    }
+    .links ul li a {
+        margin-bottom: 12px;
+    }
+    
 }
