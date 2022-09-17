@@ -84,9 +84,8 @@ button {
     .links.active ul {
         opacity: 1;
     }
-    .btn {
-        display: flex;
-        /* text-align: center; */
+    .navbar {
+        padding: 0 70px;
     }
     .links ul {
         display: block;
@@ -103,4 +102,19 @@ button {
         margin-bottom: 12px;
     }
     
+}
+@media only screen and (min-width: 840px) {
+    .btn {
+        display: flex;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 390px) {
+    .navbar {
+        padding: 0 30px;
+    }
+    .btn {
+        display: flex;
+        text-align: center;
+    }
 }
