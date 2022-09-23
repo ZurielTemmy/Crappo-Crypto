@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: monospace;
     list-style: none;
+    background: rgb(13, 13, 117);
 }
 .navbar {
     width: 100%;
